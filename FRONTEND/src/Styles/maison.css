@@ -1,0 +1,122 @@
+.maison{
+    width:100%;
+    background:#efefef;
+    padding:85px 4% 100px;
+}
+
+.maison h1{
+
+    text-align:center;
+
+    font-family:
+    "Didot",
+    "Baskerville",
+    serif;
+
+    font-size:30px;
+
+    font-weight:400;
+
+    line-height:1.4;
+
+    letter-spacing:.6px;
+
+    color:#111;
+
+    margin-bottom:65px;
+}
+
+.maison_grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:14px;
+}
+
+.maison_card{
+
+    text-decoration:none;
+
+    color:#111;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.maison_card img{
+
+    width:100%;
+
+    height:390px;
+
+    background:#f8f8f8;
+
+    padding:14px;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    display:block;
+}
+
+.maison_card h2{
+
+    margin-top:22px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:300;
+
+    letter-spacing:.4px;
+
+    line-height:1.6;
+
+    color:#111;
+
+    font-family:
+    "Avenir Next",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* tablet */
+
+@media(max-width:992px){
+
+.maison_grid{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.maison_card img{
+height:320px;
+}
+
+}
+
+/* mobile */
+
+@media(max-width:600px){
+
+.maison_grid{
+grid-template-columns:1fr;
+}
+
+.maison h1{
+font-size:24px;
+}
+
+.maison_card img{
+height:260px;
+}
+
+}

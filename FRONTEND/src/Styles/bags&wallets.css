@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+
+.latest-section{
+    width:100%;
+    margin:auto;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+
+/* Hero */
+
+.hero-image{
+    width:100%;
+    height:120vh;
+    overflow:hidden;
+    margin-bottom:60px;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+/* Heading */
+
+.latest-heading{
+    text-align:center;
+    font-size:38px;
+    font-weight:400;
+    letter-spacing:1px;
+    margin-bottom:45px;
+}
+
+
+/* Grid */
+
+.latest-grid{
+    width:95%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+
+/* Card */
+
+.latest-card{
+    cursor:pointer;
+}
+
+
+/* Product Box */
+
+.latest-image-box{
+    height:315px;
+    background:#f7f7f7;
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* Heart */
+
+.latest-heart{
+    position:absolute;
+    top:16px;
+    right:16px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+/* Product Image */
+
+.latest-image{
+    width:75%;
+    height:75%;
+    object-fit:contain;
+
+    transition:none !important;
+    transform:none !important;
+}
+
+
+/* Remove all hover */
+
+.latest-card:hover,
+.latest-image-box:hover,
+.latest-image:hover,
+.latest-card:hover .latest-image{
+    transform:none !important;
+}
+
+
+/* Content */
+
+.latest-content{
+    padding-top:12px;
+}
+
+.latest-content h3{
+    font-size:15px;
+    font-weight:400;
+    color:#222;
+    margin-bottom:4px;
+
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.latest-content p{
+    font-size:13px;
+    font-weight:300;
+    color:#8d8d8d;
+}
+
+
+/* Tablet */
+
+@media(max-width:1000px){
+
+.latest-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero-image{
+    height:90vh;
+}
+
+.latest-image-box{
+    height:280px;
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.latest-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-image{
+    height:60vh;
+}
+
+.latest-heading{
+    font-size:30px;
+}
+
+.latest-image-box{
+    height:260px;
+}
+
+.latest-image{
+    width:65%;
+    height:65%;
+}
+
+}
+
+
+
+
+.heart-icon{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.latest-image-box{
+  position: relative;
+}
+
+.heart-icon{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+

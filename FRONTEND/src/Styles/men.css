@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+
+.men-section{
+    width:100%;
+    margin:auto;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+
+/* Hero */
+
+.men-hero{
+    width:100%;
+    height:120vh;
+    overflow:hidden;
+    margin-bottom:60px;
+}
+
+.men-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+     object-position:center 25%;
+}
+
+
+/* Heading */
+
+.men-heading{
+    text-align:center;
+    font-size:38px;
+    font-weight:400;
+    margin-bottom:45px;
+    letter-spacing:1px;
+}
+
+
+/* Grid */
+
+.men-grid{
+    width:95%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+
+/* Card */
+
+.men-card{
+    cursor:pointer;
+}
+
+
+/* Product */
+
+.men-image-box{
+    height:315px;
+    background:#f7f7f7;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+
+.men-heart{
+    position:absolute;
+    top:16px;
+    right:16px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+.men-image{
+    width:75%;
+    height:75%;
+    object-fit:contain;
+
+    transform:none !important;
+    transition:none !important;
+}
+
+
+/* Remove hover */
+
+.men-card:hover,
+.men-image:hover,
+.men-image-box:hover,
+.men-card:hover .men-image{
+    transform:none !important;
+}
+
+
+/* Content */
+
+.men-content{
+    padding-top:12px;
+}
+
+.men-content h3{
+    font-size:15px;
+    font-weight:400;
+    color:#222;
+    margin-bottom:4px;
+
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.men-content p{
+    font-size:13px;
+    font-weight:300;
+    color:#8d8d8d;
+}
+
+
+/* Tablet */
+
+@media(max-width:1000px){
+
+.men-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.men-hero{
+    height:90vh;
+}
+
+.men-image-box{
+    height:280px;
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.men-grid{
+    grid-template-columns:1fr;
+}
+
+.men-hero{
+    height:60vh;
+}
+
+.men-heading{
+    font-size:30px;
+}
+
+.men-image-box{
+    height:260px;
+}
+
+.men-image{
+    width:65%;
+    height:65%;
+}
+
+}

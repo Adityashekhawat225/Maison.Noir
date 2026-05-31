@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ==========================
+   MAIN PAGE
+========================== */
+
+.details-page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    background:#f8f6f2;
+}
+
+/* ==========================
+   LEFT IMAGE SECTION
+========================== */
+
+.details-left{
+    width:58%;
+    height:100vh;
+    position:sticky;
+    top:0;
+    background:#efebe5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.details-image{
+    width:72%;
+    object-fit:contain;
+    transition:.8s ease;
+    cursor:zoom-in;
+    filter:drop-shadow(0 20px 40px rgba(0,0,0,.12));
+}
+
+.details-image:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================
+   RIGHT CONTENT
+========================== */
+
+.details-right{
+    width:42%;
+    padding:140px 90px;
+    background:linear-gradient(
+        to bottom,
+        #faf8f4,
+        #f5f1ea
+    );
+}
+
+/* ==========================
+   PRODUCT CODE
+========================== */
+
+.details-code{
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#9b8f7a;
+    margin-bottom:18px;
+    font-family:'Inter',sans-serif;
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.details-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    line-height:0.95;
+    font-weight:400;
+    color:#111;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   PRICE
+========================== */
+
+.details-price{
+    font-size:42px;
+    font-weight:300;
+    color:#111;
+    margin-bottom:8px;
+    font-family:'Inter',sans-serif;
+}
+
+.details-tax{
+    font-size:13px;
+    color:#777;
+    letter-spacing:1px;
+    margin-bottom:50px;
+}
+
+/* ==========================
+   WISHLIST
+========================== */
+
+.wishlist-btn{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.wishlist-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.details-btn{
+    width:100%;
+    height:68px;
+
+    border:none;
+    border-radius:60px;
+
+    background:#111;
+    color:#fff;
+
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.4s ease;
+
+    margin-bottom:55px;
+}
+
+.details-btn:hover{
+    background:#8c7355;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   SUPPORT
+========================== */
+
+.details-support{
+    font-size:17px;
+    line-height:2;
+    color:#666;
+    margin-bottom:45px;
+}
+
+.details-support span{
+    color:#111;
+    font-weight:500;
+    cursor:pointer;
+    border-bottom:1px solid #111;
+}
+
+/* ==========================
+   DESCRIPTION
+========================== */
+
+.details-description{
+    font-size:17px;
+    line-height:2.1;
+    color:#666;
+    margin-bottom:35px;
+}
+
+/* ==========================
+   READ MORE
+========================== */
+
+.read-more{
+    width:max-content;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border-bottom:1px solid #111;
+    padding-bottom:4px;
+    cursor:pointer;
+    margin-bottom:55px;
+    transition:.3s;
+}
+
+.read-more:hover{
+    letter-spacing:3px;
+}
+
+/* ==========================
+   INFO SECTION
+========================== */
+
+.info-section{
+    width:100%;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+    padding:32px 0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    font-size:18px;
+    color:#111;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.info-section:hover{
+    padding-left:10px;
+}
+
+.info-section:last-child{
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+/* ==========================
+   DELIVERY
+========================== */
+
+.delivery-section{
+    margin-top:90px;
+}
+
+.delivery-item{
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    padding:24px 0;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.delivery-item:hover{
+    padding-left:10px;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#b39a7b;
+    border-radius:10px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+    .details-right{
+        padding:100px 60px;
+    }
+
+    .details-title{
+        font-size:58px;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .details-page{
+        flex-direction:column;
+    }
+
+    .details-left{
+        width:100%;
+        height:auto;
+        position:relative;
+        padding:80px 0;
+    }
+
+    .details-right{
+        width:100%;
+        padding:70px 35px;
+    }
+
+    .details-image{
+        width:60%;
+    }
+
+    .details-title{
+        font-size:48px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .details-image{
+        width:85%;
+    }
+
+    .details-right{
+        padding:50px 20px;
+    }
+
+    .details-title{
+        font-size:38px;
+    }
+
+    .details-price{
+        font-size:30px;
+    }
+
+    .details-description{
+        font-size:15px;
+    }
+
+    .details-btn{
+        height:60px;
+        font-size:13px;
+    }
+
+}

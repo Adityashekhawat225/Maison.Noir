@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+
+.jewellery-section{
+    width:100%;
+    margin:auto;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+
+
+/* Hero */
+
+.jewellery-hero{
+    width:100%;
+    height:120vh;
+    overflow:hidden;
+    margin-bottom:60px;
+}
+
+.jewellery-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+/* Heading */
+
+.jewellery-heading{
+    text-align:center;
+    font-size:38px;
+    font-weight:400;
+    margin-bottom:45px;
+    letter-spacing:1px;
+}
+
+
+/* Grid */
+
+.jewellery-grid{
+    width:95%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+
+/* Card */
+
+.jewellery-card{
+    cursor:pointer;
+}
+
+
+/* Product */
+
+.jewellery-image-box{
+    height:315px;
+    background:#f7f7f7;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.jewellery-heart{
+    position:absolute;
+    top:16px;
+    right:16px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.jewellery-image{
+    width:75%;
+    height:75%;
+    object-fit:contain;
+
+    transform:none !important;
+    transition:none !important;
+}
+
+
+/* Remove hover */
+
+.jewellery-card:hover,
+.jewellery-image:hover,
+.jewellery-image-box:hover,
+.jewellery-card:hover .jewellery-image{
+    transform:none !important;
+}
+
+
+/* Content */
+
+.jewellery-content{
+    padding-top:12px;
+}
+
+.jewellery-content h3{
+    font-size:15px;
+    font-weight:400;
+    color:#222;
+    margin-bottom:4px;
+
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.jewellery-content p{
+    font-size:13px;
+    font-weight:300;
+    color:#8d8d8d;
+}
+
+
+/* Tablet */
+
+@media(max-width:1000px){
+
+.jewellery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.jewellery-hero{
+    height:90vh;
+}
+
+.jewellery-image-box{
+    height:280px;
+}
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.jewellery-grid{
+    grid-template-columns:1fr;
+}
+
+.jewellery-hero{
+    height:60vh;
+}
+
+.jewellery-heading{
+    font-size:30px;
+}
+
+.jewellery-image-box{
+    height:260px;
+}
+
+.jewellery-image{
+    width:65%;
+    height:65%;
+}
+
+}

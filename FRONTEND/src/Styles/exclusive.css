@@ -1,0 +1,194 @@
+/* ==========================
+TITLE
+========================== */
+
+.exclusive-title{
+    text-align:center;
+    font-size:18px;
+    font-weight:400;
+    margin:65px 0 35px;
+    color:#111;
+    letter-spacing:.5px;
+}
+
+
+/* ==========================
+GRID
+========================== */
+
+.exclusive-container{
+    width:91%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+}
+
+
+/* ==========================
+CARD
+========================== */
+
+.exclusive-card{
+    background:#fff;
+      cursor:pointer;
+}
+
+
+/* ==========================
+PRODUCT AREA
+========================== */
+
+.image-box{
+
+    position:relative;
+      cursor:pointer;
+
+    height:365px;
+
+    background:#f2f2f2;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+    padding-bottom:60px;
+}
+
+
+/* image wrapper */
+/* image wrapper */
+
+.img-wrap{
+
+    width:250px;
+    height:250px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* product image */
+
+.exclusive-image{
+
+    max-width:110%;
+    max-height:110%;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+}
+
+
+/* ==========================
+HEART
+========================== */
+
+.heart-icon{
+
+    position:absolute;
+
+    top:16px;
+    right:16px;
+
+    font-size:21px;
+
+    color:#111;
+}
+
+
+/* ==========================
+TEXT
+========================== */
+
+.product-info{
+    padding-top:18px;
+}
+
+
+.product-info h3{
+
+    font-size:14px;
+
+    font-weight:400;
+
+    margin-bottom:3px;
+
+    color:#111;
+}
+
+
+.price{
+
+    font-size:14px;
+
+    color:#6b6b6b;
+
+    font-weight:300;
+}
+
+
+/* ==========================
+BUTTON
+========================== */
+
+.discover-btn-wrap{
+
+display:flex;
+justify-content:center;
+
+margin:55px 0;
+}
+
+
+.discover-btn{
+
+padding:17px 36px;
+
+border-radius:999px;
+
+border:1px solid #111;
+
+background:white;
+
+font-size:14px;
+
+min-width:250px;
+
+transition:.3s;
+}
+
+.discover-btn:hover{
+
+background:#111;
+color:white;
+
+}
+
+
+/* ========================== */
+
+@media(max-width:1000px){
+
+.exclusive-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:700px){
+
+.exclusive-container{
+grid-template-columns:1fr;
+}
+
+}
