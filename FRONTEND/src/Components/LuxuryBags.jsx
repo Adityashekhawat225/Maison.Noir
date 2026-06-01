@@ -10,7 +10,7 @@ export default function LuxuryBags() {
 
   useEffect(() => {
     const getBags = async () => {
-      const { data } = await axios.get("http://localhost:5000/api/v1/products");
+      const { data } = await axios.get("https://maison-noir-jt67.onrender.com/api/v1/products");
 
       const luxuryBags = data.filter(
         (product) => product.category === "luxury bags & wallets",

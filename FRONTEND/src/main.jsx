@@ -1,12 +1,56 @@
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import { BrowserRouter } from "react-router-dom";
+
+// import App from "./App";
+// import { CartProvider } from "./context/CartContext";
+
+// import { WishlistProvider } from "./context/WishlistContext";
+
+// import { Toaster } from "sonner";
+
+// ReactDOM.createRoot(
+//   document.getElementById("root")
+// ).render(
+//   <React.StrictMode>
+//     <CartProvider>
+
+ 
+
+//     <WishlistProvider>
+
+//       <BrowserRouter>
+
+//         <App />
+
+//         <Toaster
+//           richColors
+//           position="top-right"
+//         />
+
+//       </BrowserRouter>
+
+//     </WishlistProvider>
+
+//        </CartProvider>
+
+//   </React.StrictMode>
+// );
+
+
+
+
+
+
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import App from "./App";
 import { CartProvider } from "./context/CartContext";
-
 import { WishlistProvider } from "./context/WishlistContext";
-
 import { Toaster } from "sonner";
 
 ReactDOM.createRoot(
@@ -14,25 +58,16 @@ ReactDOM.createRoot(
 ).render(
   <React.StrictMode>
     <CartProvider>
+      <WishlistProvider>
+        <HashRouter>
+          <App />
 
- 
-
-    <WishlistProvider>
-
-      <BrowserRouter>
-
-        <App />
-
-        <Toaster
-          richColors
-          position="top-right"
-        />
-
-      </BrowserRouter>
-
-    </WishlistProvider>
-
-       </CartProvider>
-
+          <Toaster
+            richColors
+            position="top-right"
+          />
+        </HashRouter>
+      </WishlistProvider>
+    </CartProvider>
   </React.StrictMode>
 );

@@ -33,7 +33,7 @@ export default function SearchPage() {
       try {
 
         const response = await axios.get(
-          "http://localhost:5000/api/v1/products"
+          "https://maison-noir-jt67.onrender.com/api/v1/products"
         );
 
         const highestPriceProducts =

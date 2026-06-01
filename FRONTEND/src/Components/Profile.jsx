@@ -20,7 +20,7 @@ export default function Profile() {
 
         const res = await axios.get(
 
-          "http://localhost:5000/api/v1/auth/profile",
+          "https://maison-noir-jt67.onrender.com/api/v1/auth/profile",
 
           {
             withCredentials: true,
